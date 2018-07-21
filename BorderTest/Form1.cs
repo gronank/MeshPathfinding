@@ -82,12 +82,8 @@ namespace BorderTest
         {
             var options = new FractalOptions(10, 15);
             int n = 10;
-            var popFractal = new TiledFractal(128, n, n, options, FractalWrapMode.NoWrap);
-            popFractal.Initialize(2576987386);
-            var popMap = popFractal.getMap();
-
-            var forestFractal = new TiledFractal(128, n, n, options, FractalWrapMode.NoWrap);
-            var forestMap = forestFractal.getMap();
+            var popMap = WrappingFractal.fractal(128, n, n, options, FractalWrapMode.NoWrap, 89761234);
+            var forestMap = WrappingFractal.fractal(128, n, n, options, FractalWrapMode.NoWrap, 1245612); ;
             var forestLevels = FractalUtility.getCutOffLevels(forestMap, new float[] { 80, 20 });
             var image = new Bitmap(128 * n, 128 * n);
             terrainMap = new int[128 * n, 128 * n];

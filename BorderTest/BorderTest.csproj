@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BorderTest</RootNamespace>
     <AssemblyName>BorderTest</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,13 +34,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Fractal">
-      <HintPath>..\..\..\..\UnityStuff\World\Assets\Fractal.dll</HintPath>
-    </Reference>
-    <Reference Include="MyMath, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\StreetGeneration\MyMath\bin\Debug\MyMath.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -51,10 +45,6 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="Triangle, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Triangle.NET\Triangle\bin\Debug\Triangle.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Form1.cs">
@@ -76,6 +66,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -94,6 +85,18 @@
     <ProjectReference Include="..\MeshPathfinding\MeshPathfinding.csproj">
       <Project>{b775e336-f721-4cbf-b495-f5ebfb6e9983}</Project>
       <Name>MeshPathfinding</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyMath\MyMath.csproj">
+      <Project>{e7de07a4-f9eb-49b8-94d2-972db67b36d5}</Project>
+      <Name>MyMath</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\submodules\fractal\Fractal\Fractal.csproj">
+      <Project>{43544cf1-d959-434c-91e0-32bf55c86200}</Project>
+      <Name>Fractal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\submodules\triangle\Triangle.NET\Triangle\Triangle.csproj">
+      <Project>{f7907a0a-b75f-400b-9e78-bfad00db4d6b}</Project>
+      <Name>Triangle</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -544,15 +544,9 @@ namespace MapCreator
 
             var townOptions = new FractalOptions(townSmallScale, townLargeScale);
             int n = blocks;
-            var popFractal = new TiledFractal(128, n, n, townOptions, FractalWrapMode.NoWrap);
-            popFractal.Initialize((uint)r.Next());
-            var popMap = popFractal.getMap();
-            var forestOptions = new FractalOptions(forestSmallScale, forestLargeScale);
-            var forestFractal = new TiledFractal(128, n, n, forestOptions, FractalWrapMode.NoWrap);
-            
-            forestFractal.Initialize((uint)r.Next());
-            
-            var forestMap = forestFractal.getMap();
+            var popMap = WrappingFractal.fractal(128, n, n, townOptions, FractalWrapMode.NoWrap, (uint)r.Next());
+            var forestOptions = new FractalOptions(forestSmallScale, forestLargeScale);           
+            var forestMap = WrappingFractal.fractal(128, n, n, forestOptions, FractalWrapMode.NoWrap, (uint)r.Next()); ;
             var forestLevels = FractalUtility.getCutOffLevels(forestMap, new float[] { 100-forestProportion, forestProportion });
             var bitmap = new Bitmap(128 * n, 128 * n);
             var terrainMap = new int[128 * n, 128 * n];

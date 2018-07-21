@@ -4,3 +4,15 @@
 
 /.vs/MeshPathfinding
 /MeshPathfinding/obj/Debug
+/BorderTest/bin/Debug
+/BorderTest/obj/Debug/TempPE
+/BorderTest/obj/Debug
+/MapCreator/bin/Debug
+/MapCreator/obj/Debug/TempPE
+/MapCreator/obj/Debug
+/MeshPathfinding/bin/Debug
+/MyMath/bin/Debug
+/MyMath/obj/Debug
+/packages/NuGet.CommandLine.2.8.6
+/WorldTest/bin/Debug
+/WorldTest/obj/Debug

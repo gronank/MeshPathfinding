@@ -4,3 +4,6 @@
 [submodule "submodules/triangle"]
 	path = submodules/triangle
 	url = https://github.com/eppz/Triangle.NET.git
+[submodule "submodules/priorityqueue"]
+	path = submodules/priorityqueue
+	url = https://github.com/BlueRaja/High-Speed-Priority-Queue-for-C-Sharp.git

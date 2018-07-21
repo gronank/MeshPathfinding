@@ -17,8 +17,9 @@ namespace MeshPathfinding.MapBuilding
             for ( int i = 1; i < path.Count; i++)
             {
                 var newNode = path[i];
-                var link = originNode.links.First(x => x.destinationNode == newNode);
-                
+                var link = originNode.links.FirstOrDefault(x => x.destinationNode == newNode);
+                if (link == null)
+                    continue;
                 if (link.TerrainType is RoadType )
                 {
                     if (newSegmentPoints.Count > 1)
