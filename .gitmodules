@@ -1,0 +1,6 @@
+[submodule "submodules/fractal"]
+	path = submodules/fractal
+	url = https://github.com/gronank/Fractal.git
+[submodule "submodules/triangle"]
+	path = submodules/triangle
+	url = https://github.com/eppz/Triangle.NET.git
