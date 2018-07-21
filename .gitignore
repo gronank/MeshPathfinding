@@ -16,3 +16,13 @@
 /packages/NuGet.CommandLine.2.8.6
 /WorldTest/bin/Debug
 /WorldTest/obj/Debug
+/BorderTest/bin/Release
+/BorderTest/obj/Release
+/MapCreator/bin/Release
+/MapCreator/obj/Release/TempPE
+/MapCreator/obj/Release
+/MeshPathfinding/bin/Release
+/MeshPathfinding/obj/Release
+/MyMath/bin/Release
+/MyMath/obj/Release
+/WorldTest/obj/Release

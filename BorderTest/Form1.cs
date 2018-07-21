@@ -27,14 +27,17 @@ namespace BorderTest
             var field = new TerrainType()
             {
                 cost = 10f,
+                name = "field"
             };
             var wood = new TerrainType()
             {
                 cost = 2f,
+                name ="wood"
             };
             var town = new TerrainType()
             {
                 cost = 1.5f,
+                name = "town"
             };
             World world = new World(biomeMap,new List<TerrainType>() { field, wood,town });
             Console.WriteLine("built world");
